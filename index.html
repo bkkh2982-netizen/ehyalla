@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>game center</title>
+  <style>
+  body {
+    margin: 0;
+  }
+    .hcolor {
+      background-color:#0171f9 ;
+      padding: 4px;
+      display: Flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .links a {
+      color: white;
+      padding: 10px 5px;
+      text-decoration: none;
+      border-radius: 30px;
+    }
+.links a:hover {
+  background: linear-gradient(270deg, #a6ccff, #ff99cc, #ffee99, #a6ccff);
+  background-size: 600% 600%;
+  animation: moveGradient 5s ease infinite;
+}
+
+/* الحركة */
+@keyframes moveGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  </style>
+</head>
+<body>
+ <div class="hcolor">
+  <img src="logo.png" 
+  width="70"
+  />
+  <div class="links">
+    <a href="#">home</a>
+    <a href="#">shop</a>
+    <button>sign in</button>
+  </div>
+ </div>
+</body>
