@@ -2,12 +2,12 @@
 <head>
   <title>game center</title>
   <style>
-  body {
+    body {
     margin: 0;
   }
     .hcolor {
       background-color:#0171f9 ;
-      padding: 4px;
+      padding: 4px 20px;
       display: Flex;
       justify-content: space-between;
       align-items: center;
@@ -18,29 +18,79 @@
       text-decoration: none;
       border-radius: 30px;
     }
-.links a:hover {
-  background: linear-gradient(270deg, #a6ccff, #ff99cc, #ffee99, #a6ccff);
-  background-size: 600% 600%;
-  animation: moveGradient 5s ease infinite;
-}
-
-/* الحركة */
-@keyframes moveGradient {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+    .links a:hover {
+      background-color: #94c8ff;
+    }
+    .links button {
+      background-color: #fff587;
+      color: #fffff;
+      border: none;
+      border-radius: 15px;
+      padding: 8px 5px;
+    }
+    .links button:hover {
+      background-color: #fffbcf;
+    }
+    .user {
+      background-color: #0171f9;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 50px;
+      align-items: center;
+      color: white;
+      border-radius: 0 0 50px 50px;
+    }
+    .seri input{
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      height: 30px;
+      padding: 0px 10px;
+    }
+    .seri button{
+      border-radius: 15px;
+      border: none;
+      background-color: #fff587;
+      padding: 7px;
+      position: absolute;
+      left: 200px;
+    }
+    .seri button:hover {
+      background-color: #fffbcf;
+    }
+    .image img {
+      border-radius: 15px;
+    }
+    .text {
+      padding-right: 10px;
+    }
   </style>
 </head>
 <body>
  <div class="hcolor">
   <img src="logo.png" 
-  width="400"
+  width="50"
   />
   <div class="links">
     <a href="#">home</a>
     <a href="#">shop</a>
     <button>sign in</button>
   </div>
+ </div>
+ <div class="user">
+   <div class="text">
+     <h2>WELCOM TO GAME CENTER</h2>
+     <h1>THE ABSAR SHU MA BA3REF SHU</h1>
+     <p>this is the best site where you can buy gams</p>
+     <div class="seri">
+       <input placeholder="search hear"/>
+       <button>SEARCH</button>
+     </div>
+   </div>
+   <div class="image">
+     <img src="pic.png"
+     width="200"
+     />
+   </div>
  </div>
 </body>
